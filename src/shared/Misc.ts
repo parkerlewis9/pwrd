@@ -1,11 +1,16 @@
 import { Request, Response, NextFunction } from 'express';
 import { UNAUTHORIZED } from 'http-status-codes';
-import { UserRoles } from '@entities';
+import { UserRoles } from '../entity';
 import { logger } from './Logger';
 import { jwtCookieProps } from './cookies';
 import { JwtService } from './JwtService';
+import { dbConfig } from './mysql'
+import { createConnection } from 'typeorm';
 
 
+// create connection to db
+
+export const dbConnection = createConnection(dbConfig)
 
 // Init shared
 const jwtService = new JwtService();

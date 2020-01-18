@@ -1,4 +1,4 @@
-import { IUser } from '@entities';
+import { IUser } from '../../entity';
 import { getRandomInt } from '@shared';
 import { MockDaoMock } from '../MockDb/MockDao.mock';
 import { IUserDao } from './UserDao';

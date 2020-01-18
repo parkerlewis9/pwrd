@@ -1,5 +1,6 @@
 import app from '@server';
 import { logger } from '@shared';
+import "reflect-metadata";
 
 // Start the server
 const port = Number(process.env.PORT || 3000);

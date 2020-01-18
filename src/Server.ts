@@ -38,12 +38,12 @@ app.get("/buttons", (req: Request, res: Response) => {
 })
 
 app.get('/users', (req: Request, res: Response) => {
-    const jwt = req.signedCookies[jwtCookieProps.key];
-    if (!jwt) {
-        res.redirect('/');
-    } else {
+    // const jwt = req.signedCookies[jwtCookieProps.key];
+    // if (!jwt) {
+        // res.redirect('/');
+    // } else {
         res.sendFile('users.html', {root: viewsDir});
-    }
+    // }
 });
 
 
