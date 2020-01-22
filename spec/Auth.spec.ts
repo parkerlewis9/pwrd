@@ -1,6 +1,6 @@
 import app from '@server';
 import supertest from 'supertest';
-import bcrypt from 'bcrypt';
+// import bcrypt from 'bcrypt';
 
 import { BAD_REQUEST, CREATED, OK, UNAUTHORIZED } from 'http-status-codes';
 import { Response, SuperTest, Test } from 'supertest';
@@ -129,8 +129,7 @@ describe('UserRouter', () => {
 
 
     function hashPwd(pwd: string) {
-        return bcrypt.hashSync(pwd, pwdSaltRounds);
+        // bcrypt.hashSync(pwd, pwdSaltRounds);
+        return "hello"
     }
 });
-
-

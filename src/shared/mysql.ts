@@ -3,9 +3,9 @@ import { Vote } from '@entity'
 
 export const dbConfig: ConnectionOptions = {
     type: "mysql",
-    host: "localhost",
+    host: "pwrd-mysql-test",
     port: 3306,
-    username: "poweredtest",
+    username: "root",
     password: "thisisfakedonthackme",
     database: "test",
     entities: [
