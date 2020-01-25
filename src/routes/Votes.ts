@@ -17,7 +17,7 @@ router.get('/all', async (req: Request, res: Response) => {
     dbConnection.then(async connection => {
         let voteRepository = connection.getRepository(Vote)
         let savedVotes = await voteRepository.find()
-        console.log("All votes ")
+        
         let tempDB = {
             "good": 0,
             "indifferent": 0,
